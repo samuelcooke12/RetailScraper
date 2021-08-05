@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Notifier</title>
+    <script type="text/javascript" src="index.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="header">Product Notifier</div>
+    <div class="container">
+    
+      <div class="enter-product model">
+        <b>Enter Product URL:</b>
+      </div>
+      <div>
+        <input type="text" id="textBox" class="title-name" />
+        <strong><div id="zipHead">Enter Your Zip Code:</div></strong>
+        <input type="text" id="zipBox">
+        <strong><div id="enterEmail">Enter your email:</div></strong>
+        <input type="text" id="emailBox">
+      </div><br>
+      <div id = "zipCode" style="display:none"></div>
+      <div id = "email" style = "display:none"></div>
+      <button class="search-btn" id="submitButton">Add Link and Search</button>
+      <button id="clearButton">Clear Links</button>
+      <button id="displayLinks">Display Links</button>
+      <button id="zipSet">Set Zip Code</button>
+
+
+      <button id="zipReset" style = "display:none">Reset Zip Code</button>
+      <button id="notify">Check All Links and Notify</button>
+      <button id="setEmail">Set Email</button>
+      <button id="resetEmail" style="display:none">Reset Email</button>
+      <strong><div id="resultScreen" style="display:none"><strong></strong></div></strong>
+      <p id="results"></p>
+        
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
